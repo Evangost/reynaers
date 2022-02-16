@@ -8,13 +8,22 @@ header.header {
   min-width: 320px;
   width: 100%;
   z-index: 100;
+  background-color: $main-first-color;
 }
 
 .header-wrapper {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-content: center;
+  padding: 20px 0 20px;
+}
+.logo-block{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
   align-content: center;
 }
 
@@ -22,10 +31,15 @@ header.header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  width: 70px;
+  padding-left: 50px;
+
 
     a {
     text-decoration: none;
+      line-height: 14px;
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
     }
 
     .active {
@@ -39,7 +53,7 @@ header.header {
   justify-content: space-between;
   width: auto;
 }
-.main-menu{
+.main-menu {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -49,12 +63,29 @@ header.header {
   width: auto;
   margin: 0;
   padding: 0;
+
+  a{
+    text-decoration: none;
+    line-height: 14px;
+  }
+  li {
+    margin: 0;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 .main-menu-action{
   display:flex;
   flex-flow: column nowrap;
-  align-content: flex-start;
-  align-items: flex-start;
-  flex-basis: content;
+  justify-content: space-between;
   width: auto;
+  height: 50px;
+  padding-left: 50px;
+  a{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 600;
+    text-decoration: none;
+  }
 }

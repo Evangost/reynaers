@@ -13,16 +13,18 @@
     <header class="header">
         <div class="container">
             <div class="header-wrapper">
-                <a href="index.html" class="logo">
-                    <picture>
-                        <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/icon.svg') %>"
-                             alt="alt-image" title="title-image">
-                    </picture>
-                </a>
-                <div class="site-lang">
-                    <a href="#">ua</a>
-                    <a href="#" class="active">ru</a>
-                    <a href="#">en</a>
+                <div class="logo-block">
+                    <a href="index.html" class="logo">
+                        <picture>
+                            <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/icon.svg') %>"
+                                 alt="alt-image" title="title-image">
+                        </picture>
+                    </a>
+                    <div class="site-lang">
+                        <a href="#">ua</a>
+                        <a href="#" class="active">ru</a>
+                        <a href="#">en</a>
+                    </div>
                 </div>
                 <div class="main-menu-wrapper">
                     <ul class="main-menu">
@@ -45,6 +47,33 @@
 
     <!-- CONTENT -->
     <main class="content">
+        <section class="section section-main-home">
+            <div class="main-home-wrapper">
+                <picture>
+                    <img src="<%= require('./img/default.svg') %>"
+                         data-src="<%= require('./img/background_building.png') %>" alt="alt-image">
+                </picture>
+                    <div class="main-home">
+                        <h1 class="main-home__title">
+                            Reynaers в Украине
+                        </h1>
+                        <p class="main-home__text">
+                            Производитель алюминиевых окон, фасадов и раздвижных дверей Reynaers
+                        </p>
+
+                        <button class="button-site button-site__lg">Связаться</button>
+                    </div>
+                </div>
+        </section>
+
+        <section class="section section-info">
+            <div class="container">
+                <div class="info-block">
+                    <p class="subtitle"></p>
+                </div>
+            </div>
+        </section>
+
 
 
         <div class="section" hidden>
@@ -108,5 +137,12 @@
     <picture><img src="<%= require('./img/loader.svg') %>" alt="pre-loader"></picture>
 </div>
 <!-- BODY END   -->
+<!--<button class="button-site button-site__sm">Связаться</button>
+<button class="button-site button-site__lg">Связаться</button>
+<button class="button-site button-site__xl">Связаться</button>-->
 </body>
 </html>
+
+
+<!--172*54--> <!--192*64-->
+
