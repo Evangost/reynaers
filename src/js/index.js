@@ -31,10 +31,13 @@ $(function () {
             slider = new Swiper('.swiper-container', {
                 observer: true,
                 observeParents: true,
-                loop: true,
-                autoplay: true,
-                spaceBetween: 25,
-                slidesPerView: 1,
+                loop: false,
+                autoplay: false,
+                spaceBetween: 30,
+                slidesPerView: 4.5,
+                /*dynamicBullets: true,*/
+                // centeredSlides:true,
+                // centeredSlidesBounds: true,
                 navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev'
@@ -43,16 +46,17 @@ $(function () {
                     el: '.swiper-pagination',
                     clickable: true
                 },
-                /*scrollbar: {
+                scrollbar: {
                     el: '.swiper-scrollbar',
-                },*/
-                dynamicBullets: true,
+                },
+
             });
         }
     }
 
+
     // Range slide
-    if ($('input[type="range"]')) {
+   /* if ($('input[type="range"]')) {
         let sliderRange = document.querySelectorAll('.slider-range');
         let sliderHandles = document.querySelectorAll('.slider-handles');
 
@@ -99,7 +103,7 @@ $(function () {
             });
         }
     }
-
+*/
     // Lazy load observer
     const imagesAll = document.querySelectorAll('img[data-src]');
     let imgObserve = new IntersectionObserver(function (entries) {

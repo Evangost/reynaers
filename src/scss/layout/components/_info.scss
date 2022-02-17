@@ -1,12 +1,39 @@
-.section-info{
-padding-bottom: 140px;
+.section-info {
+  padding-bottom: 140px;
 }
 
 .info-block {
-  display:flex;
+  display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-content: flex-start;
   align-items: flex-start;
+
+  &__text {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 790px;
+
+    &-main {
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 29px;
+      margin-bottom: 35px;
+    }
+
+    &-secondary {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: flex-start;
+      align-content: flex-start;
+      justify-content: space-between;
+
+      p {
+        font-weight: 400;
+        max-width: 380px;
+        opacity: 0.8;
+      }
+    }
+  }
 }
 
