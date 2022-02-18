@@ -7,4 +7,62 @@ footer.footer {
   position: relative;
 }
 
+.footer-wrapper{
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width:790px;
+
+}
+
+.footer-block{
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 460px;
+}
+
+.subtitle{
+  margin-bottom: 50px;
+}
+
+.phone{
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  a{
+    font-size: 22px;
+    line-height: 29px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+}
+
+.email{
+  line-height: 20px;
+  text-decoration: underline;
+  margin-bottom: 45px;
+}
+
+.address{
+  line-height: 20px;
+}
+
+.contact-us{
+  max-width: 200px;
+}
+.form-control{
+  background: none !important;
+  border: none;
+  box-shadow: none !important;
+  border-bottom: 1px solid rgba(255,255,255, 0.6);
+  color: rgba(255,255,255, 0.2);
+  border-radius: 0;
+}
 .copyright {}

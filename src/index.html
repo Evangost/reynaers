@@ -35,8 +35,8 @@
                         <li><a href="">контакты</a></li>
                     </ul>
                     <div class="main-menu-action">
-                        <div class="phone"><a href="tel:+380442479217">+38 (044) 247-92-17 </a></div>
-                        <div class="phone"><a href="tel:++380505201188">+38 (050) 520-11-88</a></div>
+                        <a href="tel:+380442479217">+38 (044) 247-92-17</a>
+                        <a href="tel:++380505201188">+38 (050) 520-11-88</a>
                     </div>
 
                 </div>
@@ -91,7 +91,7 @@
                     изготовление и монтаж конструкций из алюминия
                 </p>
 
-                <div class="main-slider swiper-container">
+                <div class="swiper-container swiper1">
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
@@ -189,19 +189,131 @@
                                 С Masterline в вашем доме всегда будет светло. И этому поспособствуют узкие, но жесткие профили.
                             </p>
                         </div>
-
-
                     </div>
-
-                    <!--  <div class="swiper-pagination"></div>-->
-
-
-                    <!-- <div class="swiper-scrollbar"></div>-->
                 </div>
+
                 <div class="slider-buttons">
-                    <div class="swiper-button-prev">
+                    <div class="swiper-button-prev swiper1-button-prev">
                     </div>
-                    <div class="swiper-button-next">
+                    <div class="swiper-button-next swiper1-button-next">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-quality">
+            <div class="container">
+                <div class="quality-wrapper">
+                    <p class="subtitle">Качество - это наша страсть</p>
+                    <div class="quality-block">
+                        <div class="quality-block__item">
+                            <p class="quality-block__item-title">Reynaers</p>
+                            <p class="quality-block__item-text">Собственное производство</p>
+                        </div>
+                        <div class="quality-block__item">
+                            <p class="quality-block__item-title">Опыт</p>
+                            <p class="quality-block__item-text">Опыт работы более 10 лет</p>
+                        </div>
+                        <div class="quality-block__item">
+                            <p class="quality-block__item-title">Качество</p>
+                            <p class="quality-block__item-text">Качественный и профессиональный монтаж</p>
+                        </div>
+                    </div>
+                    <div class="quality-block">
+                        <div class="quality-block__item">
+                            <p class="quality-block__item-title">Гарантии</p>
+                            <p class="quality-block__item-text">Гарантия до 10 лет</p>
+                        </div>
+                        <div class="quality-block__item">
+                            <p class="quality-block__item-title">Шоу рум</p>
+                            <p class="quality-block__item-text">Есть свой демонстрационный зал</p>
+                        </div>
+                        <div class="quality-block__item">
+                            <p class="quality-block__item-title">Доставка</p>
+                            <p class="quality-block__item-text">Доставка по Украине и Европе</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <section class="section section-secondary-slider">
+            <div class="container">
+                <p class="subtitle">
+                    Наши проекты
+                </p>
+
+                <div class="swiper-container swiper2">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <p class="slider-title">
+                                07.11.21
+                            </p>
+                            <picture>
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/pr-img-01.png') %>" alt="example" title="example">
+                            </picture>
+
+                        </div>
+
+                        <div class="swiper-slide">
+                            <p class="slider-title">
+                                16.09.21
+                            </p>
+                            <picture>
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/pr-img-02.png') %>" alt="example" title="example">
+                            </picture>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <p class="slider-title">
+                                13.06.21
+                            </p>
+                            <picture>
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/pr-img-03.png') %>" alt="example" title="example">
+                            </picture>
+
+                        </div>
+
+                        <div class="swiper-slide">
+                            <p class="slider-title">
+                                07.11.21
+                            </p>
+                            <picture>
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/pr-img-01.png') %>" alt="example" title="example">
+                            </picture>
+
+                        </div>
+
+                        <div class="swiper-slide">
+                            <p class="slider-title">
+                                16.09.21
+                            </p>
+                            <picture>
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/pr-img-02.png') %>" alt="example" title="example">
+                            </picture>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <p class="slider-title">
+                                13.06.21
+                            </p>
+                            <picture>
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/pr-img-03.png') %>" alt="example" title="example">
+                            </picture>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="slider-buttons">
+                    <div class="swiper-button-prev swiper2-button-prev">
+                    </div>
+                    <div class="swiper-button-next swiper2-button-next">
                     </div>
                 </div>
             </div>
@@ -211,7 +323,26 @@
 
     <!-- FOOTER -->
     <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-block">
+                    <p class="subtitle">Интересуют алюминиевые окна?</p>
+                    <div class="phone">
+                        <a href="tel:+380442479217">+38 (044) 247-92-17</a>
+                        <a href="tel:++380505201188">+38 (050) 520-11-88</a>
+                    </div>
+                    <a class="email" href="mailto:elitcon@ukr.net">elitcon@ukr.net</a>
+                    <p class="address">г. Киев, ул. Владимира Сосюры, 6, оф. 305</p>
+                </div>
+                <div class="footer-block">
+                    <p class="contact-us">Оставьте свои данные и мы свяжемся с Вами:</p>
+                    <input type="text" class="form-control" placeholder="Имя">
+                    <input type="text" class="form-control" placeholder="Телефон">
+                    <input type="email" class="form-control" placeholder="E-mail">
 
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- FOOTER END -->
 </div>

@@ -22,13 +22,13 @@ $(window).on('load', function () {
 });
 
 $(function () {
-    // Swiper slider
-    if ($('.swiper-container').length) {
+    // Swiper slider main
+    if ($('.swiper1').length) {
         let slider;
-        let slide = document.querySelectorAll('.swiper-container .swiper-slide').length;
+        let slide = document.querySelectorAll('.swiper1 .swiper-slide').length;
 
         if (slide > 1) {
-            slider = new Swiper('.swiper-container', {
+            slider = new Swiper('.swiper1', {
                 observer: true,
                 observeParents: true,
                 loop: false,
@@ -39,20 +39,35 @@ $(function () {
                 // centeredSlides:true,
                 // centeredSlidesBounds: true,
                 navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev'
+                    nextEl: '.swiper1-button-next',
+                    prevEl: '.swiper1-button-prev'
                 },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true
-                },
-                scrollbar: {
-                    el: '.swiper-scrollbar',
-                },
-
             });
         }
     }
+
+    if ($('.swiper2').length) {
+        let slider2;
+        let slide2 = document.querySelectorAll('.swiper2 .swiper-slide').length;
+
+        if (slide2 > 1) {
+            slider2 = new Swiper('.swiper2', {
+                observer: true,
+                observeParents: true,
+                loop: false,
+                autoplay: false,
+                spaceBetween: 30,
+                slidesPerView: 3.5,
+
+                navigation: {
+                    nextEl: '.swiper2-button-next',
+                    prevEl: '.swiper2-button-prev'
+                },
+            });
+        }
+    }
+
+    //Swiper slider secondary
 
 
     // Range slide
