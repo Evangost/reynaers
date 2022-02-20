@@ -138,3 +138,9 @@ $(function () {
         });
     }
 });
+
+function wellDone(){
+    let text = document.getElementById('welldoneText');
+        text.classList.add('.active');
+    setTimeout(() => text.classList.remove('.active'), 1000);
+}

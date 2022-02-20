@@ -102,7 +102,7 @@
   max-width: 380px;
 }
 
-.button-site{
+.button-site {
   padding: 20px 50px;
   border: 1px solid #FFFFFF;
   border-radius: 0;
@@ -112,14 +112,22 @@
   overflow: visible;
   transition: $transition-base;
   background: none;
-  &:hover{
-    background-color: #555555;
-    font-weight: 600;
+
+  &:hover {
+    opacity: 0.5;
   }
 
-  &__lg{
+  &__lg {
     width: 172px;
     height: 54px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+  }
+
+  &__xl {
+    width: 192px;
+    height: 64px;
     font-size: 14px;
     line-height: 14px;
     font-weight: 400;

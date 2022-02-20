@@ -308,7 +308,7 @@ iframe {
 ::selection {
   text-shadow: none;
   color: $text-color;
-  background: $main-first-color;
+  /*background: $main-first-color;*/
 }
 
 ::-moz-selection {
