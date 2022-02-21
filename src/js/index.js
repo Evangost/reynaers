@@ -67,6 +67,27 @@ $(function () {
         }
     }
 
+    if ($('.swiper3').length) {
+        let slider3;
+        let slide3 = document.querySelectorAll('.swiper3 .swiper-slide').length;
+
+        if (slide3 > 1) {
+            slider3 = new Swiper('.swiper3', {
+                observer: true,
+                observeParents: true,
+                loop: false,
+                autoplay: false,
+                spaceBetween: 30,
+                slidesPerView: 3,
+
+                navigation: {
+                    nextEl: '.swiper3-button-next',
+                    prevEl: '.swiper3-button-prev'
+                },
+            });
+        }
+    }
+
     //Swiper slider secondary
 
 
@@ -137,10 +158,12 @@ $(function () {
             imgObserve.observe(image);
         });
     }
+
+    $('#buttonClick').on('click', () => {
+        let text = $('#welldoneText');
+        text.addClass('active');
+        setTimeout(() => text.removeClass('active'), 4000);
+    })
+
 });
 
-function wellDone(){
-    let text = document.getElementById('welldoneText');
-        text.classList.add('.active');
-    setTimeout(() => text.classList.remove('.active'), 1000);
-}

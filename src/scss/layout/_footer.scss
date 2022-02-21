@@ -8,29 +8,30 @@ footer.footer {
 
 }
 
-.footer-wrapper{
+.footer-wrapper {
   display: flex;
   flex-flow: row wrap;
   align-content: flex-start;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-bottom: 25px;
-  border-bottom: 1px solid rgba(255,255,255, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 
 }
 
-.footer-contact{
+.footer-contact {
   display: flex;
   flex-flow: column wrap;
   align-content: flex-start;
   align-items: flex-start;
   justify-content: flex-start;
-  .subtitle{
+
+  .subtitle {
     margin-bottom: 50px;
     max-width: 220px;
   }
 }
-.footer-action{
+
+.footer-action {
   display: flex;
   flex-flow: column wrap;
   align-content: flex-start;
@@ -39,26 +40,30 @@ footer.footer {
   max-width: 380px;
   margin-left: 120px;
   height: 500px;
-  .button-site{
+
+  .button-site {
     margin-top: 45px;
   }
-  .accepted{
+
+  .accepted {
     display: none;
-  }
-  &.active{
-    display: block;
+    margin-top: 25px;
+
+    &.active {
+      display: block;
+    }
   }
 }
 
 
-
-.phone{
+.phone {
   display: flex;
   flex-flow: column wrap;
   align-content: flex-start;
   align-items: flex-start;
   margin-bottom: 20px;
-  a{
+
+  a {
     font-size: 22px;
     line-height: 29px;
     font-weight: 300;
@@ -66,49 +71,54 @@ footer.footer {
   }
 }
 
-.email{
+.email {
   line-height: 20px;
   text-decoration: underline;
   margin-bottom: 45px;
 }
 
-.address{
+.address {
   line-height: 20px;
 }
 
-.contact-us{
+.contact-us {
   max-width: 200px;
 
 }
-.form-control{
+
+.form-control {
   background: none !important;
   border: none;
   box-shadow: none !important;
-  border-bottom: 1px solid rgba(255,255,255, 0.6);
-  color: rgba(255,255,255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.2);
   border-radius: 0;
   font-size: 18px;
   line-height: 25px;
   margin-top: 30px;
 }
-.checkbox{
+
+.checkbox {
   margin-top: 15px;
-  span{
+
+  span {
     line-height: 20px;
     margin-left: 10px;
-    a:link{
+
+    a:link {
       text-decoration: underline;
     }
   }
 
 }
-.custom-checkbox{
+
+.custom-checkbox {
   position: relative;
   width: 12px;
   height: 12px;
   border: 1px solid #FFFFFF;
 
-  &:checked:before{
+  &:checked:before {
     content: '';
     position: absolute;
     width: 6px;
@@ -120,6 +130,15 @@ footer.footer {
     transition: all 0.5s ease 0s;
   }
 }
-.copyright {
 
+.copyright {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+.copyright__text{
+}
+.copyright__social-link{
+  margin-left: 20px;
 }

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, shrink-to-fit=no">
+    <title>Главная</title>
+</head>
+<body class="loaded">
+<!-- BODY -->
+<div class="main-wrapper">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo-block">
+                    <a href="index.html" class="logo">
+                        <picture>
+                            <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/icon.svg') %>"
+                                 alt="alt-image" title="title-image">
+                        </picture>
+                    </a>
+                    <div class="site-lang">
+                        <a href="#">ua</a>
+                        <a href="#" class="active">ru</a>
+                        <a href="#">en</a>
+                    </div>
+                </div>
+                <div class="main-menu-wrapper">
+                    <ul class="main-menu">
+                        <li><a href="">о нас</a></li>
+                        <li><a href="">продукция</a></li>
+                        <li><a href="">проекты</a></li>
+                        <li><a href="">блог</a></li>
+                        <li><a href="">контакты</a></li>
+                    </ul>
+                    <div class="main-menu-action">
+                        <a href="tel:+380442479217">+38 (044) 247-92-17</a>
+                        <a href="tel:++380505201188">+38 (050) 520-11-88</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- CONTENT -->
+    <main class="content">
+        <div class="container">
+            <nav aria-label="Breadcrumb" class="breadcrumbs">
+                <ul>
+                    <li><a href="#">Главная</a> /</li>
+                    <li class="active-page"><a href="#">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="section-partners">
+            <div class="container">
+                <p class="subtitle">Официальный партнер компании Reynaers Aluminium в Украине</p>
+                <div class="partners-block">
+                    <img class="partners-block__image" src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/au-image.png') %>" alt="example" title="example">
+                    <div class="partners-block__info">
+                        <p class="partners-block__info-text">Компания ЭЛИТКОН успешно работает на украинском рынке алюминиевой продукции.</p>
+                        <p class="partners-block__info-text">Основное направление компании ‘’ЭЛИТКОН”- изготовление и монтаж конструкций из алюминия, среди которых:</p>
+                        <div class="partners-block__info-list">
+                            <ul>
+                                <li>окна из алюминия</li>
+                                <li>алюминиевые двери</li>
+                                <li>раздвижные алюминиевые системы</li>
+                                <li>зимние сады</li>
+                                <li>светопрозрачные фасады</li>
+                            </ul>
+                        </div>
+                        <p class="partners-block__info-text">
+                            Благодаря высокому профессионализму команды, глубокому пониманию потребностей заказчиков, безупречному выполнению задач любой сложности и
+                            контролю качества на всех этапах выполнения заказа, компания «ЭЛИТКОН» сумела завоевать доверие среди клиентов и надёжность среди партнёров.
+                        </p>
+                        <button class="button-site button-site__xl">Связаться</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-principles">
+            <div class="container">
+                <p class="subtitle">Наши принципы</p>
+                <div class="principles-block">
+                    <div class="principles-block__item-first">
+                        <p class="principles-block__title">Безопасность</p>
+                        <p class="principles-block__text">При изготовлении наших конструкций мы используем только сертифицированные системы алюминиевых профилей, фурнитуру и
+                            стекла. Все элементы наших окон экологически чистые, не выделяют вредных веществ.</p>
+                    </div>
+                    <div class="principles-block__item-second">
+                        <p class="principles-block__title">Квалификация</p>
+                        <p class="principles-block__text">Все наши технические специалисты имеют колоссальный, многолетний опыт в производстве и установке алюминиевых
+                            конструкций.</p>
+                    </div>
+                    <div class="principles-block__item-third">
+                        <p class="principles-block__title">Целостность</p>
+                        <p class="principles-block__text">Компания выполняет весь спектр работ, начиная замером и заканчивая установкой и обслуживанием конструкций.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section-clients-slider">
+            <div class="container">
+                <p class="subtitle">клиенты о нас</p>
+
+                <div class="swiper-container swiper3">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <picture>
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/face-01.png') %>" alt="example" title="example">
+                            </picture>
+                            <p class="slider-name">Владимир Подплетько</p>
+                            <p class="slider-text">“Профессиональная консультация с подбора окон”</p>
+                            <p class="slider-data">07.11.21 </p>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <picture>
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/face-02.png') %>" alt="example" title="example">
+                            </picture>
+                            <p class="slider-name">Николай Карпенко</p>
+                            <p class="slider-text">“Понравилась технология монтажа раздвижки”</p>
+                            <p class="slider-data">07.11.21 </p>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <picture>
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/face-03.png') %>" alt="example" title="example">
+                            </picture>
+                            <p class="slider-name">Петр Комаров</p>
+                            <p class="slider-text">“Профессиональная консультация с подбора окон”</p>
+                            <p class="slider-data">07.11.21 </p>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <picture>
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/face-04.png') %>" alt="example" title="example">
+                            </picture>
+                            <p class="slider-name">Владимир Подплетько</p>
+                            <p class="slider-text">“Профессиональная консультация с подбора окон”</p>
+                            <p class="slider-data">07.11.21 </p>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <picture>
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/face-01.png') %>" alt="example" title="example">
+                            </picture>
+                            <p class="slider-name">Владимир Подплетько</p>
+                            <p class="slider-text">“Профессиональная консультация с подбора окон”</p>
+                            <p class="slider-data">07.11.21 </p>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <picture>
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/face-02.png') %>" alt="example" title="example">
+                            </picture>
+                            <p class="slider-name">Владимир Подплетько</p>
+                            <p class="slider-text">“Профессиональная консультация с подбора окон”</p>
+                            <p class="slider-data">07.11.21 </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="slider-buttons">
+                    <div class="swiper-button-prev swiper3-button-prev">
+                    </div>
+                    <div class="swiper-button-next swiper3-button-next">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- CONTENT END -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-contact">
+                    <p class="subtitle">Интересуют алюминиевые окна?</p>
+                    <div class="phone">
+                        <a href="tel:+380442479217">+38 (044) 247-92-17</a>
+                        <a href="tel:++380505201188">+38 (050) 520-11-88</a>
+                    </div>
+                    <a class="email" href="mailto:elitcon@ukr.net">elitcon@ukr.net</a>
+                    <p class="address">г. Киев, ул. Владимира Сосюры, 6, оф. 305</p>
+                </div>
+                <div class="footer-action">
+                    <p class="contact-us">Оставьте свои данные и мы свяжемся с Вами:</p>
+                    <input type="text" class="form-control" placeholder="Имя">
+                    <input type="text" class="form-control" placeholder="Телефон">
+                    <input type="email" class="form-control" placeholder="E-mail">
+                    <div class="checkbox">
+                        <label>
+                            <input class="custom-checkbox" type="checkbox"> <!--disabled="disabled"-->
+                            <span> Даю согласие на обработку <a href="#">персональных данных</a></span>
+                        </label>
+                    </div>
+                    <button class="button-site button-site__xl" id="buttonClick">Связаться</button>
+                    <p class="accepted" id="welldoneText">Данные отправлены! Мы свяжемся с вами в ближайшее время.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                <p class="copyright__text">© Все права защищены</p>
+                <div class="copyright__social">
+                    <a href="" class="copyright__social-link">
+                        <picture>
+                            <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/facebook.svg') %>"
+                                 alt="alt-image" title="title-image">
+                        </picture>
+                    </a>
+                    <a href="" class="copyright__social-link">
+                        <picture>
+                            <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/insta.svg') %>"
+                                 alt="alt-image" title="title-image">
+                        </picture>
+                    </a>
+                    <a href="" class="copyright__social-link">
+                        <picture>
+                            <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/linkden.svg') %>"
+                                 alt="alt-image" title="title-image">
+                        </picture>
+                    </a>
+                    <a href="" class="copyright__social-link">
+                        <picture>
+                            <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/youtube.svg') %>"
+                                 alt="alt-image" title="title-image">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+</div>
+
+<div class="icon-load">
+    <picture><img src="<%= require('./img/loader.svg') %>" alt="pre-loader"></picture>
+</div>
+<!-- BODY END   -->
+
+</body>
+</html>
