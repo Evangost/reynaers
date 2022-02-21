@@ -78,7 +78,7 @@ $(function () {
                 loop: false,
                 autoplay: false,
                 spaceBetween: 30,
-                slidesPerView: 3,
+                slidesPerView: 3.5,
 
                 navigation: {
                     nextEl: '.swiper3-button-next',
