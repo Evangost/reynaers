@@ -55,7 +55,6 @@ footer.footer {
   }
 }
 
-
 .phone {
   display: flex;
   flex-flow: column wrap;
@@ -137,8 +136,13 @@ footer.footer {
   justify-content: space-between;
   padding: 25px 0;
 }
+
 .copyright__text{
 }
-.copyright__social-link{
-  margin-left: 20px;
+
+.copyright__social{
+  a {
+    margin-left: 20px;
+    text-decoration: none;
+  }
 }
