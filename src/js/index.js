@@ -88,6 +88,27 @@ $(function () {
         }
     }
 
+    if ($('.window-info-block__slider').length) {
+        let slider;
+        let slide = document.querySelectorAll('.window-info-block__slider .swiper-slide').length;
+
+        if (slide > 1) {
+            slider = new Swiper('.window-info-block__slider', {
+                observer: true,
+                observeParents: true,
+                loop: false,
+                autoplay: false,
+                spaceBetween: 30,
+                slidesPerView: 1,
+
+                navigation: {
+                    nextEl: '.swiper4-button-next',
+                    prevEl: '.swiper4-button-prev'
+                },
+            });
+        }
+    }
+
    /* if ($('.swiper-windows').length) {
         let slider;
         let slide = document.querySelectorAll('.swiper-windows .swiper-slide').length;

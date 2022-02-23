@@ -1,0 +1,136 @@
+.section-window-info {
+  padding-bottom: 150px;
+
+  .subtitle {
+    margin-bottom: 40px;
+  }
+
+  .swiper-wrapper {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+
+  .swiper-container {
+    margin: 0 0 0 40px;
+  }
+
+  .slider-buttons {
+    position: absolute;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 50px;
+    top: 80%;
+    left: 80%;
+  }
+
+  .swiper-button-prev {
+    position: static;
+    background-image: url("../img/window-prev.svg");
+
+  }
+
+  .swiper-button-next {
+    position: static;
+    background-image: url("../img/window-next.svg");
+  }
+
+  .loupe {
+    position: absolute;
+    top: 5%;
+    left: 85%;
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+    color: black;
+  }
+}
+
+.window-info-block {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin-bottom: 50px;
+}
+
+.window-info-block__text {
+  margin-top: 20px;
+  max-width: 770px;
+
+  p {
+   margin-bottom: 20px;
+    opacity: 0.8;
+  }
+}
+
+.technical-specification{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+
+
+&__spoiler{
+  width: 560px;
+  details summary::-webkit-details-marker {
+    display: none
+  }
+  /* Убираем стандартный маркер Firefox */
+  details > summary {
+    list-style: none;
+  }
+
+  details{
+    transition:height 3s ease-in;
+    font-size: 22px;
+    line-height: 29px;
+    font-weight: 300;
+  }
+  details summary::after{
+    content:"";
+    margin: 10px 0 0 10px;
+    position: absolute;
+    background: center no-repeat url("../img/tech-arrow.svg");
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+  }
+  details[open] summary::after{
+    background: center no-repeat url("../img/tech-arrow-open.svg");
+  }
+
+  img{
+    margin-top: 30px;
+  }
+
+  details {
+    transition: height 2s ease;
+  }
+  details:not([open]) { height: 1em; }
+  details[open] { height: 3.75em; }
+}
+
+&__text{
+  padding-left: 50px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+  &__title{
+    font-size: 22px;
+    line-height: 29px;
+    font-weight: 300;
+  }
+
+&__spoiler{
+  details summary::-webkit-details-marker {
+    display: none
+  }
+  /* Убираем стандартный маркер Firefox */
+  details > summary {
+    list-style: none;
+  }
+}
+
+}
