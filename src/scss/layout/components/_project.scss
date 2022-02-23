@@ -1,0 +1,33 @@
+.section-project {
+  padding-bottom: 143px;
+
+  .pagination-block {
+    margin-top: 75px;
+  }
+
+}
+
+
+.project-block {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+  }
+
+  &__card {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 50px;
+    max-width: 370px;
+  }
+
+  &__text {
+    font-size: 22px;
+    line-height: 29px;
+    margin-top: 11px;
+    font-weight: 300;
+  }
+}
