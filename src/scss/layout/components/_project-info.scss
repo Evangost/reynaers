@@ -1,6 +1,34 @@
 .section-project-info{
   padding-bottom: 140px;
+  .subtitle{
+    margin-bottom: 50px;
+  }
 }
-.project-info__card{
+.project-info {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  &__card {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    max-width: 370px;
+    img{
+      max-width: 100%;
+      height: 310px;
+    }
+  }
+  &__title{
+    margin: 24px 0;
+    font-size: 22px;
+    line-height: 29px;
+    font-weight: 300;
 
+  }
+  &__text{
+    font-weight: 300;
+  }
 }
