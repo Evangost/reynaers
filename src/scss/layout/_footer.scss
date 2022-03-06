@@ -38,7 +38,7 @@ footer.footer {
   align-items: flex-start;
   justify-content: flex-start;
   max-width: 380px;
-  margin-left: 120px;
+  /*margin-left: 120px;*/
   height: 500px;
 
   .button-site {
@@ -144,5 +144,18 @@ footer.footer {
   a {
     margin-left: 20px;
     text-decoration: none;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .footer-action {
+    margin-left: 30px;
+  }
+
+}
+
+@include media-breakpoint-up(lg) {
+  .footer-action {
+    margin-left: 120px;
   }
 }

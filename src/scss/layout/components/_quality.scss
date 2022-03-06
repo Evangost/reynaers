@@ -1,5 +1,6 @@
 .section-quality {
   padding-bottom: 140px;
+
 }
 
 .quality-wrapper {
@@ -8,6 +9,7 @@
   align-items: flex-start;
   align-content: flex-start;
   justify-content: space-between;
+  max-width: 380px;
 }
 
 .quality-block {
@@ -35,5 +37,32 @@
   &-text {
   opacity: 0.6;
     margin: 0;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .section-quality {
+    .subtitle{
+      margin-right: 250px;
+    }
+  }
+  .quality-wrapper {
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .quality-block {
+    margin-right: 100px;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .section-quality{
+    .subtitle{
+      margin-right: 0;
+    }
+  }
+  .quality-wrapper {
+    justify-content: space-between;
+  }
+  .quality-block {
+    margin-right: 0;
   }
 }

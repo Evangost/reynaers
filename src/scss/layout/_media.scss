@@ -9,8 +9,9 @@
 @include media-breakpoint-up(xl) {}
 
 // max-width
+@media screen and (max-width: 320px) {}
 @include media-breakpoint-down(lg) {}
 @include media-breakpoint-down(md) {}
 @include media-breakpoint-down(sm) {}
 @include media-breakpoint-down(xs) {}
-@media screen and (max-width: 320px) {}
+

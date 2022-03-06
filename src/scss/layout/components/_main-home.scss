@@ -1,46 +1,123 @@
-.section-main-home {
-  margin-bottom: 140px;
-}
 
-.main-home-wrapper {
-  position: relative;
-  display: block;
-  max-width: 1400px;
-  margin: 0 auto;
-  img {
-    display: block;
-    opacity: 0.7;
-    max-width: 100%;
-    max-height: 700px;
-    margin: 0 auto;
+  .section-main-home {
+    padding-bottom: 75px;
+  }
+
+  .main-home-wrapper {
+    position: relative;
+    /* margin: 0 auto;*/
+    img {
+      display: block;
+      opacity: 0.3;
+      height: auto;
+      max-width: 320px;
+    }
+  }
+
+  .main-home {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    top: 7px;
+    left: 17px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+
+    &__title {
+      font-size: 64px;
+      line-height: 64px;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      margin-bottom: 10px;
+    }
+
+    &__text {
+      font-size: 24px;
+      line-height: 30px;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      max-width: 550px;
+      max-width: 300px;
+    }
+  }
+
+
+
+@media screen and (max-width: 375px) {
+  .main-home-wrapper {
+    img {
+      max-width: 375px;
+    }
+    .main-home{
+      top: 20px;
+      left: 35px;
+    }
   }
 }
 
-.main-home {
-  position: absolute;
-  top: 30%;
-  left: 5%;
-  display: flex;
-  flex-flow: column nowrap;
-
-
-  &__title {
-    font-size: 64px;
-    line-height: 64px;
-    font-weight: 700;
-    margin-bottom: 20px;
+@media screen and (min-width: 425px) {
+  .main-home-wrapper {
+    img {
+      max-width: 425px;
+      opacity: 0.3;
+    }
   }
-  &__text{
-    font-size: 24px;
-    line-height: 30px;
-    max-width: 550px;
+  .main-home{
+    top: 30px;
+    left: 75px;
   }
 }
+
+
 @include media-breakpoint-up(sm) {
+  .main-home-wrapper {
+    img {
+      display: block;
+      opacity: 0.5;
+      max-width: 100%;
+    }
+  }
+  .main-home {
+    top: 53px;
+    left: 19px;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    &__title {
+      font-size: 48px;
+      line-height: 50px;
+    }
+    &__text{
+      font-size: 24px;
+      line-height: 30px;
+      max-width: 550px;
+      text-align: left;
+    }
+  }
 
 }
 
 @include media-breakpoint-up(md) {
+  .main-home-wrapper {
+    img {
+      opacity: 0.7;
+    }
+  }
+  .main-home {
+    top: 30%;
+    left: 5%;
+    &__title {
+      font-size: 64px;
+      line-height: 64px;
+    }
+  }
 
 }
 
