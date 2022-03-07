@@ -1,8 +1,6 @@
 .section-windows-slider {
   padding-bottom: 143px;
-  .windows-card-block {
-    padding-left: 50px;
-  }
+
 
   .swiper-pagination {
     position: relative;
@@ -16,11 +14,16 @@
 .card-block {
   display: flex;
   width: 100%;
-  flex-flow: row nowrap;
+
+  flex-flow: column wrap;
   justify-content: space-between;
   align-items: flex-start;
   align-content: flex-start;
+
   margin-bottom: 100px;
+  img{
+    margin-bottom: 30px;/**/
+  }
 }
 
 .card-block__item-first {
@@ -29,6 +32,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   align-content: flex-start;
+
   max-width: 340px;
   height: 100%;
 
@@ -40,11 +44,12 @@
 
   &_text {
     margin: 0;
+    max-width: 300px;
     opacity: 0.8;
   }
 
   .button-site {
-    margin-top: 60px;
+    margin-top: 40px;
   }
 }
 
@@ -63,6 +68,7 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  max-width: 334px;
 }
 
 .pagination-block{
@@ -92,3 +98,73 @@
     text-decoration: none;
   }
 }
+
+
+
+@include media-breakpoint-up(sm) {
+  .card-block {
+    align-items: center;
+    align-content: center;
+  }
+  .card-block__item-first {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+}
+
+@include media-breakpoint-up(md) {
+
+
+}
+
+
+@include media-breakpoint-up(lg) {
+
+  .card-block {
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    img{
+      margin-bottom: 0;/**/
+      margin-right: 25px;
+    }
+  }
+  .card-block__item-first {
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-right: 20px;
+  }
+  .button-site {
+    margin-top: 40px;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .section-windows-slider {
+    .windows-card-block {
+      padding-left: 50px;
+    }
+  }
+
+  .card-block__item-first {
+    margin-right: 20px;
+    &_text {
+      max-width: 100%;
+    }
+    .button-site {
+      margin-top: 60px;
+    }
+  }
+}
+
+
+@include media-breakpoint-up(xxl) {
+
+}
+
+/*
+
+
+}*/

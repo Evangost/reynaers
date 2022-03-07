@@ -197,32 +197,7 @@ $(function () {
         }
     }
 
-    /* if ($('.swiper-windows').length) {
-         let slider;
-         let slide = document.querySelectorAll('.swiper-windows .swiper-slide').length;
 
-         if (slide > 1) {
-             slider = new Swiper('.swiper-windows', {
-                 observer: true,
-                 observeParents: true,
-                 slidesPerView: 1,
-                 navigation: {
-                     nextEl: '.swiper4-button-next',
-                     prevEl: '.swiper4-button-prev'
-                 },
-                 pagination: {
-                     el: '.swiper-pagination',
-                     clickable: true,
-                     type: 'fraction',
-                 },
-                 /!*scrollbar: {
-                     el: '.swiper-scrollbar',
-                 },*!/
-                 dynamicBullets: true,
-             });
-         }
-
-     }*/
     // Lazy load observer
     const imagesAll = document.querySelectorAll('img[data-src]');
     let imgObserve = new IntersectionObserver(function (entries) {

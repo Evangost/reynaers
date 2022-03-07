@@ -133,8 +133,7 @@ footer.footer {
 .copyright {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
-  padding: 25px 0;
+   padding: 25px 0;
 }
 
 .copyright__text{
@@ -142,7 +141,7 @@ footer.footer {
 
 .copyright__social{
   a {
-    margin-left: 20px;
+    margin-left: 10px;
     text-decoration: none;
   }
 }
@@ -151,7 +150,14 @@ footer.footer {
   .footer-action {
     margin-left: 30px;
   }
-
+  .copyright {
+    justify-content: space-between;
+  }
+  .copyright__social{
+    a {
+      margin-left: 20px;
+    }
+  }
 }
 
 @include media-breakpoint-up(lg) {
