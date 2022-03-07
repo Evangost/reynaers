@@ -1,12 +1,13 @@
 .section-principles{
   padding-bottom: 140px;
+
   .subtitle{
     margin-bottom: 60px;
   }
 }
 .principles-block{
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   align-items: flex-start;
   align-content: flex-start;
   justify-content: space-between;
@@ -17,7 +18,9 @@
     flex-flow: column nowrap;
     align-items: flex-start;
     align-content: flex-start;
-    max-width: 380px;
+    max-width: 350px;
+    margin-top: 75px;
+
 
     &::after {
       content: "";
@@ -57,3 +60,29 @@
   }
 }
 
+@include media-breakpoint-up(sm) {
+
+}
+
+@include media-breakpoint-up(md) {
+
+
+}
+
+
+@include media-breakpoint-up(lg) {
+
+}
+
+@include media-breakpoint-up(xl) {
+  .principles-block{
+    &__item-first, &__item-second, &__item-third {
+      margin-top: 0;
+    }
+  }
+}
+
+
+@include media-breakpoint-up(xxl) {
+
+}

@@ -145,6 +145,33 @@ $(function () {
                     nextEl: '.swiper3-button-next',
                     prevEl: '.swiper3-button-prev'
                 },
+                breakpoints:
+                    {
+                        320: {
+                            spaceBetween: 30,
+                            slidesPerView: 1,
+                        },
+                        375: {
+                            spaceBetween: 30,
+                            slidesPerView: 1,
+                        },
+                        425: {
+                            spaceBetween: 30,
+                            slidesPerView: 1,
+                        },
+                        576: {
+                            spaceBetween: 30,
+                            slidesPerView: 2,
+                        },
+                        768: {
+                            spaceBetween: 30,
+                            slidesPerView: 2.5,
+                        },
+                        992: {
+                            spaceBetween: 30,
+                            slidesPerView: 3.5,
+                        }
+                    }
             });
         }
     }

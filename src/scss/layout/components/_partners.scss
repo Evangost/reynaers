@@ -39,8 +39,9 @@
   width: 100%;
 
   &__image {
-    max-width: 460px;
-    max-height: 100%;
+      max-height: 100%;
+      max-width: 345px;
+      margin-bottom: 30px;
   }
 
   &__info {
@@ -64,4 +65,31 @@
       }
     }
   }
+}
+
+@include media-breakpoint-up(sm) {
+
+}
+
+@include media-breakpoint-up(md) {
+
+
+}
+
+
+@include media-breakpoint-up(lg) {
+  .partners-block {
+    &__image {
+      max-width: 460px;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+
+}
+
+
+@include media-breakpoint-up(xxl) {
+
 }
