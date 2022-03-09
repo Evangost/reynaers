@@ -39,10 +39,48 @@
                         <a href="tel:+380442479217">+38 (044) 247-92-17</a>
                         <a href="tel:++380505201188">+38 (050) 520-11-88</a>
                     </div>
+                    <div class="data-block">
+                        <a class="email" href="mailto:elitcon@ukr.net">elitcon@ukr.net</a>
+                        <p class="address">г. Киев, ул. Владимира Сосюры, 6, оф. 305</p>
+                        <div class="copyright">
+                            <p class="copyright__text">© Все права защищены</p>
+                            <div class="copyright__social">
+                                <a href="">
+                                    <picture>
+                                        <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/facebook.svg') %>"
+                                             alt="alt-image" title="title-image">
+                                    </picture>
+                                </a>
+                                <a href="">
+                                    <picture>
+                                        <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/insta.svg') %>"
+                                             alt="alt-image" title="title-image">
+                                    </picture>
+                                </a>
+                                <a href="">
+                                    <picture>
+                                        <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/linkden.svg') %>"
+                                             alt="alt-image" title="title-image">
+                                    </picture>
+                                </a>
+                                <a href="">
+                                    <picture>
+                                        <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/youtube.svg') %>"
+                                             alt="alt-image" title="title-image">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
+                <button class="header-wrapper-toggle">
+                    <span class="burger-menu_lines"></span>
+                </button>
+                <!--<div class="main-menu-wrapper__burger"></div>-->
             </div>
         </div>
+        <div class="burger-menu_overlay"></div>
     </header>
     <!-- HEADER END -->
 
@@ -64,11 +102,12 @@
                     <p class="article"><img src="<%= require('./img/default.svg') %>" class="article-img"
                                             data-src="<%= require('./img/blog-img.png') %>" alt="example"
                                             title="example">
-                    <p class="article-data">02.09.21</p> Современные технологии достигли такого уровня, что
+                    <p class="article-data">02.09.21</p>
+                    <p class="paragraph">Современные технологии достигли такого уровня, что
                     повышение уровня гражданского сознания говорит о возможностях распределения внутренних резервов
                     и ресурсов. Как уже неоднократно упомянуто, некоторые особенности внутренней политики будут
                     своевременно верифицированы. Не следует, однако, забывать, что укрепление и развитие внутренней
-                    структуры играет определяющее значение для новых предложений.
+                        структуры играет определяющее значение для новых предложений.</p>
                     <p class="paragraph">Принимая во внимание показатели успешности, начало повседневной работы по
                         формированию позиции позволяет оценить значение новых принципов формирования
                         материально-технической и кадровой базы. Высокий уровень вовлечения представителей целевой
@@ -129,7 +168,7 @@
                     <p class="address">г. Киев, ул. Владимира Сосюры, 6, оф. 305</p>
                 </div>
                 <div class="footer-action">
-                    <p class="contact-us">Оставьте свои данные и мы свяжемся с Вами:</p>
+                    <p id="anchor" class="contact-us">Оставьте свои данные и мы свяжемся с Вами:</p>
                     <input type="text" class="form-control" placeholder="Имя">
                     <input type="text" class="form-control" placeholder="Телефон">
                     <input type="email" class="form-control" placeholder="E-mail">
@@ -151,8 +190,7 @@
                 <div class="copyright__social">
                     <a href="">
                         <picture>
-                            <img src="<%= require('./img/default.svg') %>"
-                                 data-src="<%= require('./img/facebook.svg') %>"
+                            <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/facebook.svg') %>"
                                  alt="alt-image" title="title-image">
                         </picture>
                     </a>
@@ -164,15 +202,13 @@
                     </a>
                     <a href="">
                         <picture>
-                            <img src="<%= require('./img/default.svg') %>"
-                                 data-src="<%= require('./img/linkden.svg') %>"
+                            <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/linkden.svg') %>"
                                  alt="alt-image" title="title-image">
                         </picture>
                     </a>
                     <a href="">
                         <picture>
-                            <img src="<%= require('./img/default.svg') %>"
-                                 data-src="<%= require('./img/youtube.svg') %>"
+                            <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/youtube.svg') %>"
                                  alt="alt-image" title="title-image">
                         </picture>
                     </a>

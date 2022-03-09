@@ -31,3 +31,37 @@
     font-weight: 300;
   }
 }
+
+@include media-breakpoint-up(sm) {
+
+
+}
+
+@include media-breakpoint-up(md) {
+
+
+}
+
+
+@include media-breakpoint-up(lg) {
+
+
+}
+@include media-breakpoint-up(xl) {
+  .project-block {
+    justify-content: flex-start;
+    &__card {
+      margin-right: 100px;
+    }
+  }
+}
+
+
+@include media-breakpoint-up(xxl) {
+  .project-block {
+    justify-content: space-between;
+    &__card {
+      margin-right: 0;
+    }
+  }
+}

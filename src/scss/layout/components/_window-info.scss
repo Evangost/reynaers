@@ -1,5 +1,5 @@
 .section-window-info {
-  padding-bottom: 150px;
+
 
   .subtitle {
     margin-bottom: 40px;
@@ -9,11 +9,13 @@
     position: relative;
     width: 300px;
     height: 300px;
+
+
+  }
+  .swiper-container {
+    margin-left: 10px;
   }
 
-  .swiper-container {
-    margin: 0 0 0 40px;
-  }
 
   .slider-buttons {
     position: absolute;
@@ -54,83 +56,154 @@
   align-items: flex-start;
   align-content: flex-start;
   margin-bottom: 50px;
+
 }
 
 .window-info-block__text {
   margin-top: 20px;
-  max-width: 770px;
+  max-width: 360px; /**/
 
   p {
-   margin-bottom: 20px;
+    margin-bottom: 20px;
     opacity: 0.8;
   }
 }
 
-.technical-specification{
+.technical-specification {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 
 
+  &__spoiler {
+    width: 560px;
 
-&__spoiler{
-  width: 560px;
-  details summary::-webkit-details-marker {
-    display: none
-  }
-  /* Убираем стандартный маркер Firefox */
-  details > summary {
-    list-style: none;
+    details summary::-webkit-details-marker {
+      display: none
+    }
+
+    /* Убираем стандартный маркер Firefox */
+    details > summary {
+      list-style: none;
+    }
+
+    details {
+      transition: height 3s ease-in;
+      font-size: 22px;
+      line-height: 29px;
+      font-weight: 300;
+      margin-bottom: 80px; /**/
+    }
+
+    details summary::after {
+      content: "";
+      margin: 10px 0 0 10px;
+      position: absolute;
+      background: center no-repeat url("../img/tech-arrow.svg");
+      background-size: contain;
+      width: 15px;
+      height: 15px;
+    }
+
+    details[open] summary::after {
+      background: center no-repeat url("../img/tech-arrow-open.svg");
+    }
+
+    img {
+      margin-top: 30px;
+      max-width: 360px; /**/
+    }
+
+    details {
+      transition: height 2s ease;
+    }
+
+    details:not([open]) {
+      height: 1em;
+    }
+
+    details[open] {
+      height: 3.75em;
+    }
   }
 
-  details{
-    transition:height 3s ease-in;
+  &__text {
+    padding-left: 20px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 50px;
+  }
+
+  &__title {
     font-size: 22px;
     line-height: 29px;
     font-weight: 300;
   }
-  details summary::after{
-    content:"";
-    margin: 10px 0 0 10px;
-    position: absolute;
-    background: center no-repeat url("../img/tech-arrow.svg");
-    background-size: contain;
-    width: 15px;
-    height: 15px;
-  }
-  details[open] summary::after{
-    background: center no-repeat url("../img/tech-arrow-open.svg");
+
+  &__spoiler {
+    details summary::-webkit-details-marker {
+      display: none
+    }
+
+    /* Убираем стандартный маркер Firefox */
+    details > summary {
+      list-style: none;
+    }
   }
 
-  img{
-    margin-top: 30px;
-  }
-
-  details {
-    transition: height 2s ease;
-  }
-  details:not([open]) { height: 1em; }
-  details[open] { height: 3.75em; }
 }
 
-&__text{
-  padding-left: 50px;
-  border-left: 1px solid rgba(255, 255, 255, 0.3);
+@include media-breakpoint-up(sm) {
+
+
 }
-  &__title{
-    font-size: 22px;
-    line-height: 29px;
-    font-weight: 300;
+
+@include media-breakpoint-up(md) {
+
+
+}
+
+
+@include media-breakpoint-up(lg) {
+  .window-info-block__text {
+    max-width: 770px;
+  }
+  .technical-specification {
+    &__text {
+      padding-left: 50px;
+    }
+
+    &__spoiler {
+      details {
+        margin-bottom: 100px;
+      }
+
+      img {
+        max-width: 560px;
+      }
+    }
   }
 
-&__spoiler{
-  details summary::-webkit-details-marker {
-    display: none
+}
+
+@include media-breakpoint-up(xl) {
+  .section-window-info {
+    padding-bottom: 150px;
+
+    .swiper-container {
+      margin-left: 40px;
+    }
   }
-  /* Убираем стандартный маркер Firefox */
-  details > summary {
-    list-style: none;
+
+  .technical-specification {
+    &__spoiler {
+      details {
+        /* margin-bottom: 100px;*/
+      }
+    }
   }
 }
+
+
+@include media-breakpoint-up(xxl) {
 
 }

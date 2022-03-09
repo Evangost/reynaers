@@ -39,10 +39,48 @@
                         <a href="tel:+380442479217">+38 (044) 247-92-17</a>
                         <a href="tel:++380505201188">+38 (050) 520-11-88</a>
                     </div>
+                    <div class="data-block">
+                        <a class="email" href="mailto:elitcon@ukr.net">elitcon@ukr.net</a>
+                        <p class="address">г. Киев, ул. Владимира Сосюры, 6, оф. 305</p>
+                        <div class="copyright">
+                            <p class="copyright__text">© Все права защищены</p>
+                            <div class="copyright__social">
+                                <a href="">
+                                    <picture>
+                                        <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/facebook.svg') %>"
+                                             alt="alt-image" title="title-image">
+                                    </picture>
+                                </a>
+                                <a href="">
+                                    <picture>
+                                        <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/insta.svg') %>"
+                                             alt="alt-image" title="title-image">
+                                    </picture>
+                                </a>
+                                <a href="">
+                                    <picture>
+                                        <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/linkden.svg') %>"
+                                             alt="alt-image" title="title-image">
+                                    </picture>
+                                </a>
+                                <a href="">
+                                    <picture>
+                                        <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/youtube.svg') %>"
+                                             alt="alt-image" title="title-image">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
+                <button class="header-wrapper-toggle">
+                    <span class="burger-menu_lines"></span>
+                </button>
+                <!--<div class="main-menu-wrapper__burger"></div>-->
             </div>
         </div>
+        <div class="burger-menu_overlay"></div>
     </header>
     <!-- HEADER END -->
 
@@ -64,10 +102,15 @@
                 <div class="project-info">
 
                     <div class="project-info__card">
-                        <picture>
+                        <div class="project-info__image">
                             <img src="<%= require('./img/default.svg') %>"
-                                 data-src="<%= require('./img/project-img.png') %>" alt="example" title="example">
-                        </picture>
+                                 data-src="<%= require('./img/project-img02.png') %>" alt="example" title="example" tabindex="0">
+                            <div class="loupe">
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/loupe.svg') %>"
+                                     alt="example" title="example">
+                            </div>
+                        </div>
+
                         <div class="project-info__title">Задача:</div>
                         <div class="project-info__text">
                             Задача организации, в особенности же реализация намеченных плановых заданий требуют
@@ -76,10 +119,14 @@
                     </div>
 
                     <div class="project-info__card">
-                            <picture>
+                            <div class="project-info__image">
                                 <img src="<%= require('./img/default.svg') %>"
-                                     data-src="<%= require('./img/project-img01.png') %>" alt="example" title="example">
-                            </picture>
+                                     data-src="<%= require('./img/project-img01.png') %>" alt="example" title="example" tabindex="0">
+                                <div class="loupe">
+                                    <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/loupe.svg') %>"
+                                         alt="example" title="example">
+                                </div>
+                            </div>
                             <div class="project-info__title">Реализация:</div>
                             <div class="project-info__text">
                                 Задача организации, в особенности же реализация намеченных плановых заданий требуют
@@ -90,11 +137,15 @@
                         </div>
 
                     <div class="project-info__card">
-                                <picture>
+                                <div class="project-info__image">
                                     <img src="<%= require('./img/default.svg') %>"
                                          data-src="<%= require('./img/project-img02.png') %>" alt="example"
-                                         title="example">
-                                </picture>
+                                         title="example" tabindex="0">
+                                    <div class="loupe">
+                                        <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/loupe.svg') %>"
+                                             alt="example" title="example">
+                                    </div>
+                                </div>
                                 <div class="project-info__title">Сроки выполнения:</div>
                                 <div class="project-info__text">
                                     Не следует, однако забывать, что постоянное информационно-пропагандистское
@@ -125,7 +176,7 @@
                     <p class="address">г. Киев, ул. Владимира Сосюры, 6, оф. 305</p>
                 </div>
                 <div class="footer-action">
-                    <p class="contact-us">Оставьте свои данные и мы свяжемся с Вами:</p>
+                    <p id="anchor" class="contact-us">Оставьте свои данные и мы свяжемся с Вами:</p>
                     <input type="text" class="form-control" placeholder="Имя">
                     <input type="text" class="form-control" placeholder="Телефон">
                     <input type="email" class="form-control" placeholder="E-mail">
@@ -147,8 +198,7 @@
                 <div class="copyright__social">
                     <a href="">
                         <picture>
-                            <img src="<%= require('./img/default.svg') %>"
-                                 data-src="<%= require('./img/facebook.svg') %>"
+                            <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/facebook.svg') %>"
                                  alt="alt-image" title="title-image">
                         </picture>
                     </a>
@@ -160,15 +210,13 @@
                     </a>
                     <a href="">
                         <picture>
-                            <img src="<%= require('./img/default.svg') %>"
-                                 data-src="<%= require('./img/linkden.svg') %>"
+                            <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/linkden.svg') %>"
                                  alt="alt-image" title="title-image">
                         </picture>
                     </a>
                     <a href="">
                         <picture>
-                            <img src="<%= require('./img/default.svg') %>"
-                                 data-src="<%= require('./img/youtube.svg') %>"
+                            <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/youtube.svg') %>"
                                  alt="alt-image" title="title-image">
                         </picture>
                     </a>

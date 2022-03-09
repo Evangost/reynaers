@@ -1,14 +1,60 @@
-.section-project-info{
+.section-project-info {
   padding-bottom: 140px;
-  .subtitle{
+
+  .subtitle {
     margin-bottom: 50px;
   }
+
+  .loupe {
+    position: absolute;
+    top: 10px;
+    left: 90%;
+    width: 20px;
+    height: 20px;
+  }
+
+
+  img[tabindex="0"] {
+   /* cursor: zoom-in;*/
+    transition: all .5s ease-out;
+
+    &:focus {
+      position: fixed;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      /*width: auto;
+      height: auto;*/
+      width: 50%;
+      height: 70%;
+      margin: auto;
+      box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(210, 210, 210, .4);
+    }
+  }
+
+  img[tabindex="0"]:focus, /* убрать строку, если не нужно, чтобы при клике на увеличенное фото, оно возвращалось в исходное состояние */
+  img[tabindex="0"]:focus ~ * {
+    pointer-events: none;
+    cursor: zoom-out;
+  }
+
+
 }
+
 .project-info {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
   justify-content: space-between;
+
+  &__image {
+    position: relative;
+    max-width: 100%;
+    height: 310px;
+  }
+
   &__card {
     display: flex;
     flex-flow: column nowrap;
@@ -16,19 +62,56 @@
     align-items: flex-start;
     align-content: flex-start;
     max-width: 370px;
-    img{
-      max-width: 100%;
-      height: 310px;
+    margin-bottom: 30px;
+
+    img {
+      height: auto;
     }
   }
-  &__title{
+
+  &__title {
     margin: 24px 0;
     font-size: 22px;
     line-height: 29px;
     font-weight: 300;
 
   }
-  &__text{
+
+  &__text {
     font-weight: 300;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+
+
+}
+
+@include media-breakpoint-up(md) {
+
+
+}
+
+
+@include media-breakpoint-up(lg) {
+
+
+}
+
+@include media-breakpoint-up(xl) {
+  .project-info {
+    &__card {
+      margin-bottom: 0;
+      margin-right: 30px;
+    }
+  }
+}
+
+
+@include media-breakpoint-up(xxl) {
+  .project-info {
+    &__card {
+      margin-right: 0;
+    }
   }
 }

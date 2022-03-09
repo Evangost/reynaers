@@ -1,19 +1,47 @@
 .section-article {
   padding-bottom: 150px;
+  max-width: 350px;
 
   .subtitle {
     margin-bottom: 50px;
   }
 }
 
-.article-img {
-  float: left;
-  margin: 0 70px 75px 0;
-}
+
 
 .article-data{
   opacity: 0.5;
 }
 .paragraph{
   margin: 25px 0 0 0;
+}
+
+@include media-breakpoint-up(sm) {
+  .section-article {
+    max-width: 100%;
+  }
+
+
+}
+
+@include media-breakpoint-up(md) {
+
+
+}
+
+
+@include media-breakpoint-up(lg) {
+  .article-img {
+    float: left;
+    margin: 0 70px 75px 0;
+  }
+
+}
+@include media-breakpoint-up(xl) {
+
+}
+
+
+@include media-breakpoint-up(xxl) {
+
 }
