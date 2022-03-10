@@ -27,10 +27,10 @@
       right: 0;
       /*width: auto;
       height: auto;*/
-      width: 50%;
-      height: 70%;
+      width: 375px;
+      height: 300px;
       margin: auto;
-      box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(210, 210, 210, .4);
+      box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(210, 210, 210, .9);
     }
   }
 
@@ -83,8 +83,16 @@
 }
 
 @include media-breakpoint-up(sm) {
+  .section-project-info {
 
 
+  img[tabindex="0"] {
+    &:focus {
+      width: 600px;
+      height: 500px;
+    }
+  }
+  }
 }
 
 @include media-breakpoint-up(md) {

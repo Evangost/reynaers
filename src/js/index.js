@@ -7,6 +7,7 @@ import 'bootstrap';
 import 'popper.js';
 import Swiper from 'swiper/dist/js/swiper.min';
 import noUiSlider from 'nouislider';
+import removeClasses from "swiper/src/components/core/classes/removeClasses";
 
 
 $(window).on('load', function () {
@@ -26,9 +27,23 @@ $(window).on('load', function () {
         document.querySelector('.burger-menu_lines').classList.toggle('active');
         document.querySelector('.burger-menu_overlay').classList.toggle('active');
         document.querySelector('.header-wrapper-toggle').classList.toggle('active');
+
     }
-
-
+    const zoomButtons = document.querySelectorAll('.swiper-slide');
+    zoomButtons.forEach((el) => {
+        el.onclick = function () {
+            const modalImage = document.querySelector('.zoom-image');
+            const image = modalImage.getElementsByTagName("img").item(0);
+            const activeSlide = document.querySelector('.swiper-slide-active');
+            const activeSlideImg = activeSlide.getElementsByTagName('img').item(0);
+            image.src = activeSlideImg.src;
+            modalImage.classList.toggle('active-image');
+        }
+    })
+    const closeButton = document.querySelector('.zoom-image');
+          closeButton.onclick = function () {
+             document.querySelector('.zoom-image').classList.toggle('active-image');
+          }
 });
 
 $(function () {
@@ -197,6 +212,9 @@ $(function () {
         }
     }
 
+    $('.swiper-slide-active img').on('click', function () {
+        $('.zoom-image img').attr('src', $(this).data('img'));
+    });
 
     // Lazy load observer
     const imagesAll = document.querySelectorAll('img[data-src]');
@@ -222,7 +240,6 @@ $(function () {
         text.addClass('active');
         setTimeout(() => text.removeClass('active'), 4000);
     })
-
 
 
 });

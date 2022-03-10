@@ -9,13 +9,15 @@
     position: relative;
     width: 300px;
     height: 300px;
-
-
+    img{
+      height: 300px;
+    }
   }
+
+
   .swiper-container {
     margin-left: 10px;
   }
-
 
   .slider-buttons {
     position: absolute;
@@ -151,9 +153,42 @@
   }
 
 }
+.zoom-image{
+ display:none;
+}
+
+.active-image{
+  display: block;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    width:375px;
+    height: 400px;
+    margin: auto;
+    box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(210, 210, 210, .9);
+  img:focus, /* убрать строку, если не нужно, чтобы при клике на увеличенное фото, оно возвращалось в исходное состояние */
+  img:focus ~ * {
+    pointer-events: none;
+    cursor: zoom-out;
+  }
+
+
+}
 
 @include media-breakpoint-up(sm) {
-
+  .active-image{
+    width: 500px;
+    height: 500px;
+  }
 
 }
 
