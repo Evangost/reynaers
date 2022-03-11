@@ -13,7 +13,7 @@
 
 .card-block {
   display: flex;
-  width: 100%;
+  width: 340px;
 
   flex-flow: column wrap;
   justify-content: space-between;
@@ -103,6 +103,7 @@
 
 @include media-breakpoint-up(sm) {
   .card-block {
+    width: 100%;
     align-items: center;
     align-content: center;
   }
