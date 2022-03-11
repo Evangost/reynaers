@@ -29,7 +29,7 @@ $(window).on('load', function () {
         document.querySelector('.header-wrapper-toggle').classList.toggle('active');
 
     }
-    const zoomButtons = document.querySelectorAll('.swiper-slide');
+  /*  const zoomButtons = document.querySelectorAll('.swiper-slide');
     zoomButtons.forEach((el) => {
         el.onclick = function () {
             const modalImage = document.querySelector('.zoom-image');
@@ -43,7 +43,7 @@ $(window).on('load', function () {
     const closeButton = document.querySelector('.zoom-image');
           closeButton.onclick = function () {
              document.querySelector('.zoom-image').classList.toggle('active-image');
-          }
+          }*/
 });
 
 $(function () {
